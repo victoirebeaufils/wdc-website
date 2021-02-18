@@ -5,22 +5,19 @@ import Container from '../Container/Container'
 import Navbar from './../Navbar/Navbar';
 import '../normalize.css'
 import {Grommet } from 'grommet'
+import FadeIn from './../FadeIn/FadeIn';
 
 export default function Layout(props){
 
     return(
-        <Grommet>
+    
         <div style={props.style}>
-             <Navbar/>
-      <Container> 
+             <FadeIn><Navbar/></FadeIn>
          
           
             {props.children}
             
-           
-</Container>
 </div>
-</Grommet>
 
 
    

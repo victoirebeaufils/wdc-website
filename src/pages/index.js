@@ -4,23 +4,46 @@ import {Link} from 'gatsby'
 import Navbar from './../components/Navbar/Navbar';
 import Card from "../components/Card/Card";
 import Button from '../components/Button/Button'
-
+import Title from "../components/Title/Title";
+import Challenges from '../images/icons/challenges-icon.png'
+import HackNights from '../images/icons/hack-night-icon.png'
+import Workshops from '../images/icons/workshop-icon.png'
 const IndexPage = () => {
-  
-  return (
-    <Layout>
-      <Card title='Workshops' description='We organize workshops to teach students about various web technologies, ranging from frontend to server and database options to build websites. '>
+
+return (
+<Layout>
+  <div class="container">
+    <Title>hey</Title>
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <Card title='Workshops'
+        description='We organize workshops to teach students about various web technologies, ranging from frontend to server and database options to build websites. '
+        icon={Workshops}>
+      
         <Button class="button-default" text="See schedule"></Button>
       </Card>
-      <Card title='Hack Nights' description='We meet once every week to work on personal projects, chat web development and learn more about tools and technologies we are passionate about.'>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <Card title='Hack Nights'
+        description='We meet once every week to work on personal projects, chat web development and learn more about tools and technologies we are passionate about.'
+        icon={HackNights}>
         <Button class="button-default" text="Join us"></Button>
       </Card>
-      <Card title='Challenges' description='We create monthly challenges based on what we cover in workshops and invite members to build websites to improve and showcase their skills.'>
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <Card title='Challenges'
+        description='We create monthly challenges based on what we cover in workshops and invite members to build websites to improve and showcase their skills.'
+        icon={Challenges}>
         <Button class="button-default" text="See challenges"></Button>
       </Card>
+    </div>
+    <div class="col-sm-12 col-md-4">
       <Link to="/StylingSheet/StylingSheet">Styling Sheet</Link>
-    </Layout>
-  )
+    </div>
+  </div>
+  </div>
+</Layout>
+)
 }
 
 export default IndexPage
