@@ -8,12 +8,21 @@ import Title from "../components/Title/Title";
 import Challenges from '../images/icons/challenges-icon.png'
 import HackNights from '../images/icons/hack-night-icon.png'
 import Workshops from '../images/icons/workshop-icon.png'
+import IndexImg from '../images/index-img.jpg'
 const IndexPage = () => {
 
 return (
 <Layout>
   <div class="container">
-    <Title>hey</Title>
+   <div class="row">
+      <div class="col-lg-6 col-sm-12">
+      <img class="img-fluid"src={IndexImg}></img>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+       <Title>ABOUT US</Title>
+       </div>
+       </div>
+
   <div class="row">
     <div class="col-sm-12 col-md-6 col-lg-4">
       <Card title='Workshops'
